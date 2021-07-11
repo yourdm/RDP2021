@@ -28,5 +28,5 @@ jobs:
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
     - name: Download Timeout Script
       run: Invoke-WebRequest https://raw.githubusercontent.com/mai1load/windows-20/main/timeout.ps1 -OutFile timeout.ps1
-    - name: Keep Alive
+    - name: All Done! You can close Tab now! Maximum VM time:6h.
       run: ./timeout.ps1
